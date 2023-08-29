@@ -13,8 +13,9 @@
       steps:
         - name: repo-checkout
           uses: actions/checkout@v3
-        - id: 'auth'
-          name: 'Authenticate to Google Cloud'
+          
+        - name: 'Authenticate to Google Cloud'
+          id: 'auth'
           uses: 'google-github-actions/auth@v1'
           with:
               credentials_json: '${{ secrets.SERVICE_ACCOUNT_KEY }}'
@@ -22,6 +23,7 @@
           with:
             java-version: '17'
             distribution: 'temurin'
+
         - name: Run the Maven verify phase
           run: mvn --batch-mode --update-snapshots verify
 
