@@ -4,8 +4,8 @@
       branches:
         - main
   env:
-    IMAGE_NAME: javahelloworld
-    PROJECT_ID: Banktestproject
+    IMAGE_NAME: java-helloworld
+    PROJECT_ID: banktestproject
   jobs:
     build-push-gcr:
       name: Build and Push to GCP
