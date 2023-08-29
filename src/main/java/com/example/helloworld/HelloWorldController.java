@@ -15,6 +15,6 @@ public class HelloWorldController {
     @GetMapping("/hello")
     public ResponseEntity<String> getHello(){
         log.info("Called Hello World Control");
-        return ResponseEntity.ok().body("Google Cloud Platform says " + message);
+        return ResponseEntity.ok().body("Google Cloud Platform SHOUTS " + message);
     }
 }
