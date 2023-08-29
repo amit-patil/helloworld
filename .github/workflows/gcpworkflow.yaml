@@ -45,8 +45,8 @@
         
         - name: Push Docker Image to Artifact Registry
           run: |-
-            docker tag $IMAGE_NAME:latest europe-west3-docker.pkg.dev/$PROJECT_ID/$IMAGE_NAME:$ARTIFACTORY_IMAGE_TAG
-            docker push europe-west3-docker.pkg.dev/$PROJECT_ID/$IMAGE_NAME:$ARTIFACTORY_IMAGE_TAG
+            docker tag $IMAGE_NAME:latest europe-west3-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:$ARTIFACTORY_IMAGE_TAG
+            docker push europe-west3-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:$ARTIFACTORY_IMAGE_TAG
 
 
 
