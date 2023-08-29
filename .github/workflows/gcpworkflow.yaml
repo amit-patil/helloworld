@@ -5,7 +5,7 @@
         - main
   env:
     IMAGE_NAME: java-helloworld
-    PROJECT_ID: banktestproject
+    PROJECT_ID: banktestproject-396710
   jobs:
     build-push-gcr:
       name: Build and Push to GCP
