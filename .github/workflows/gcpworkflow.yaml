@@ -19,7 +19,8 @@
           id: 'auth'
           uses: 'google-github-actions/auth@v1'
           with:
-              credentials_json: '${{ secrets.SERVICE_ACCOUNT_KEY }}'
+            workload_identity_provider: 'projects/963417155292/locations/global/workloadIdentityPools/github-actions-cloud-run'
+            service_account: 'cloudrun-ci-cd@banktestproject-398809.iam.gserviceaccount.com'
               #workload_identity_provider: '${{ secrets.WIF_PROVIDER }}'
               #service_account: '${{ secrets.SA_EMAIL}}'
         - uses: actions/setup-java@v3
