@@ -5,7 +5,7 @@
         - main
   env:
     IMAGE_NAME: java-helloworld
-    PROJECT_ID: banktestproject-398221
+    PROJECT_ID: banktestproject-398809
     ARTIFACTORY_IMAGE_TAG: ${{github.run_number}}
   jobs:
     build-push-gcr:
