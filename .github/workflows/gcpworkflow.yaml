@@ -11,6 +11,9 @@
     build-push-gcr:
       name: Build and Push to GCP
       runs-on: ubuntu-latest  
+      permissions:
+        contents: 'read'
+        id-token: 'write'
       steps:
         - name: repo-checkout
           uses: actions/checkout@v3
