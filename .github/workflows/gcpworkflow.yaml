@@ -19,9 +19,9 @@
           id: 'auth'
           uses: 'google-github-actions/auth@v1'
           with:
-        #      credentials_json: '${{ secrets.SERVICE_ACCOUNT_KEY }}'
-            workload_identity_provider: '${{ secrets.WIF_PROVIDER }}'
-            service_account: '${{ secrets.SA_EMAIL}}'
+              #credentials_json: '${{ secrets.SERVICE_ACCOUNT_KEY }}'
+              workload_identity_provider: '${{ secrets.WIF_PROVIDER }}'
+              service_account: '${{ secrets.SA_EMAIL}}'
         - uses: actions/setup-java@v3
           with:
             java-version: '17'
