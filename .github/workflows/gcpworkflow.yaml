@@ -17,9 +17,7 @@
       steps:
         - name: repo-checkout
           uses: actions/checkout@v3
-          with:
-            repository: amit-patil/resource-main-a
-            ref: main
+ 
 
         - name: 'Authenticate to Google Cloud'
           id: 'auth'
