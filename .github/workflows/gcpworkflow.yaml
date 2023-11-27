@@ -12,6 +12,7 @@
       with:
         repository-name: amit-patil/helloworld
         ref: main
+      secrets: inherit
        
      
 
