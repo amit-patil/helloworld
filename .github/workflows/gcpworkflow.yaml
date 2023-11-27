@@ -5,7 +5,7 @@
         - main
   jobs:
     build-push-gcr:
-      uses: amit-patil/ci-cd-deployment-workflows/.github/workflows/reusable-java-workflow.yaml@main
+      uses: amit-patil/ci-cd-deployment-workflows/.github/workflows/resuable-java-workflow.yaml@main
       with:
         repository-name: amit-patil/hello-world
         ref: main
