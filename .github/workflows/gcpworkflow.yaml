@@ -5,6 +5,9 @@
         - main
   jobs:
     build-push-gcr:
+      permissions:
+        contents: 'read'
+        id-token: 'write'
       uses: amit-patil/ci-cd-deployment-workflows/.github/workflows/resuable-java-workflow.yaml@main
       with:
         repository-name: amit-patil/hello-world
